@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N6h-Sr-cvZ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="am6-eH-apc">
+            <objects>
+                <navigationController id="N6h-Sr-cvZ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="91x-KW-wSm">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="XJo-ru-qvo" kind="relationship" relationship="rootViewController" id="LU5-vC-48r"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Vh-AX-sJI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-912" y="96"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hgg-Ce-TnN">
+            <objects>
+                <viewController id="XJo-ru-qvo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hwi-0K-Hn2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="HqY-UH-BVX">
+                                <rect key="frame" x="32" y="554" width="362" height="30"/>
+                                <state key="normal" title="Hi Mom"/>
+                                <connections>
+                                    <segue destination="oyi-Gt-0jl" kind="show" id="Q3W-8H-NXt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="FRl-So-xeF">
+                                <rect key="frame" x="32" y="624" width="350" height="30"/>
+                                <state key="normal" title="Homework sux, I'm outta here"/>
+                                <connections>
+                                    <segue destination="LQo-KS-fCk" kind="show" id="7jb-3d-yLE"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Mom is home, what do I do?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="a7V-MD-KPQ">
+                                <rect key="frame" x="78" y="272" width="258" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="lAf-pM-kC6"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9dD-4D-QmF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="a7V-MD-KPQ" firstAttribute="centerX" secondItem="FRl-So-xeF" secondAttribute="centerX" id="25q-Wd-hvc"/>
+                            <constraint firstItem="FRl-So-xeF" firstAttribute="top" secondItem="HqY-UH-BVX" secondAttribute="bottom" constant="40" id="6LO-Nd-taX"/>
+                            <constraint firstItem="9dD-4D-QmF" firstAttribute="bottom" secondItem="FRl-So-xeF" secondAttribute="bottom" constant="208" id="7oV-7a-EdC"/>
+                            <constraint firstItem="HqY-UH-BVX" firstAttribute="trailing" secondItem="hwi-0K-Hn2" secondAttribute="trailingMargin" id="Hqz-9b-kwc"/>
+                            <constraint firstItem="a7V-MD-KPQ" firstAttribute="centerX" secondItem="9dD-4D-QmF" secondAttribute="centerX" id="WaF-nN-U0S"/>
+                            <constraint firstItem="FRl-So-xeF" firstAttribute="leading" secondItem="9dD-4D-QmF" secondAttribute="leading" constant="32" id="hOp-kz-85V"/>
+                            <constraint firstItem="a7V-MD-KPQ" firstAttribute="leading" secondItem="9dD-4D-QmF" secondAttribute="leading" constant="78" id="poz-Sc-ocl"/>
+                            <constraint firstItem="a7V-MD-KPQ" firstAttribute="top" secondItem="9dD-4D-QmF" secondAttribute="top" constant="184" id="rJb-Xs-PAt"/>
+                            <constraint firstItem="HqY-UH-BVX" firstAttribute="leading" secondItem="FRl-So-xeF" secondAttribute="leading" id="vJG-Ve-TwI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0xi-zh-glY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VSU-GC-duM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84.057971014492765" y="93.75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jRK-Be-e0b">
+            <objects>
+                <viewController id="oyi-Gt-0jl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JEs-0q-e97">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Mom: &quot;Hi Poochie-poo. Give your Step-Pepper a kiss.&quot;" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8Xe-kS-a0F">
+                                <rect key="frame" x="78" y="272" width="258" height="219"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="219" id="NWh-ll-rmb"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ylU-dQ-1JL">
+                                <rect key="frame" x="32" y="703" width="350" height="30"/>
+                                <state key="normal" title="&quot;You're not my dad!!!!&quot;"/>
+                                <connections>
+                                    <segue destination="wo0-4V-bIA" kind="show" id="f1d-yB-AKz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="rOA-gD-t1p">
+                                <rect key="frame" x="32" y="639" width="362" height="30"/>
+                                <state key="normal" title="Kiss Step-Pepper on the forehead"/>
+                                <connections>
+                                    <segue destination="Mky-eH-ngp" kind="show" id="gib-LQ-nQt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="P9q-qc-HvM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8Xe-kS-a0F" firstAttribute="centerX" secondItem="P9q-qc-HvM" secondAttribute="centerX" id="5ht-NZ-OQL"/>
+                            <constraint firstItem="rOA-gD-t1p" firstAttribute="trailing" secondItem="JEs-0q-e97" secondAttribute="trailingMargin" id="IOR-Kj-E9a"/>
+                            <constraint firstItem="P9q-qc-HvM" firstAttribute="bottom" secondItem="ylU-dQ-1JL" secondAttribute="bottom" constant="129" id="NzO-NJ-5fs"/>
+                            <constraint firstItem="8Xe-kS-a0F" firstAttribute="top" secondItem="P9q-qc-HvM" secondAttribute="top" constant="184" id="TMR-vW-Q5c"/>
+                            <constraint firstItem="ylU-dQ-1JL" firstAttribute="top" secondItem="rOA-gD-t1p" secondAttribute="bottom" constant="34" id="YyU-TA-H6c"/>
+                            <constraint firstItem="ylU-dQ-1JL" firstAttribute="leading" secondItem="P9q-qc-HvM" secondAttribute="leading" constant="32" id="hTM-7R-gWd"/>
+                            <constraint firstItem="rOA-gD-t1p" firstAttribute="leading" secondItem="ylU-dQ-1JL" secondAttribute="leading" id="pTc-ZS-18f"/>
+                            <constraint firstItem="8Xe-kS-a0F" firstAttribute="centerX" secondItem="ylU-dQ-1JL" secondAttribute="centerX" id="tZx-iO-bVv"/>
+                            <constraint firstItem="8Xe-kS-a0F" firstAttribute="leading" secondItem="P9q-qc-HvM" secondAttribute="leading" constant="78" id="yp1-Wd-Qh8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bIM-oB-PSh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NFO-Ft-9zy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="771.01449275362324" y="-526.33928571428567"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jfy-Yt-Aob">
+            <objects>
+                <viewController id="LQo-KS-fCk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FXd-rY-WIv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Hvf-v0-l1U">
+                                <rect key="frame" x="32" y="554" width="362" height="30"/>
+                                <state key="normal" title="Start homework. A single tear falls down your cheek"/>
+                                <connections>
+                                    <segue destination="rto-e5-saC" kind="show" id="e84-Bl-fvz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Cp5-Uu-sCV">
+                                <rect key="frame" x="32" y="624" width="350" height="30"/>
+                                <state key="normal" title="You scream: &quot;NOBODY GETS ME!&quot; and run to the garage."/>
+                                <connections>
+                                    <segue destination="M8d-C3-Nax" kind="show" id="p8d-d0-paH"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tS4-N5-zCp">
+                                <rect key="frame" x="78" y="272" width="258" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="vPr-oH-8ub"/>
+                                </constraints>
+                                <string key="text">Mom: "I will snap your oboe in half and deflate your kickball if you don't start hitting the books by the time I count to three. ONE..."</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="feu-Lb-fJs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="feu-Lb-fJs" firstAttribute="bottom" secondItem="Cp5-Uu-sCV" secondAttribute="bottom" constant="208" id="1Bg-cH-xsB"/>
+                            <constraint firstItem="tS4-N5-zCp" firstAttribute="centerX" secondItem="Cp5-Uu-sCV" secondAttribute="centerX" id="8ik-2W-OWc"/>
+                            <constraint firstItem="Cp5-Uu-sCV" firstAttribute="leading" secondItem="feu-Lb-fJs" secondAttribute="leading" constant="32" id="GLh-Xw-V4s"/>
+                            <constraint firstItem="tS4-N5-zCp" firstAttribute="top" secondItem="feu-Lb-fJs" secondAttribute="top" constant="184" id="M6P-UR-FSj"/>
+                            <constraint firstItem="Hvf-v0-l1U" firstAttribute="leading" secondItem="Cp5-Uu-sCV" secondAttribute="leading" id="SBb-C1-7Cm"/>
+                            <constraint firstItem="tS4-N5-zCp" firstAttribute="leading" secondItem="feu-Lb-fJs" secondAttribute="leading" constant="78" id="eLv-CJ-lDf"/>
+                            <constraint firstItem="Cp5-Uu-sCV" firstAttribute="top" secondItem="Hvf-v0-l1U" secondAttribute="bottom" constant="40" id="eN4-Sd-IoQ"/>
+                            <constraint firstItem="Hvf-v0-l1U" firstAttribute="trailing" secondItem="FXd-rY-WIv" secondAttribute="trailingMargin" id="kd3-Iq-q4N"/>
+                            <constraint firstItem="tS4-N5-zCp" firstAttribute="centerX" secondItem="feu-Lb-fJs" secondAttribute="centerX" id="wXX-oi-oSb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="C7v-V7-y7N"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2nm-rV-f3X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="833" y="893"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qVT-ZJ-41K">
+            <objects>
+                <viewController id="Mky-eH-ngp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ahY-dN-gnv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Step-Pepper: You can call me Peppsy-Peps. I'm your new Pep-Pep." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fCD-Re-3Cu">
+                                <rect key="frame" x="78" y="134" width="258" height="266"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Ggz-CA-zNI">
+                                <rect key="frame" x="32" y="772" width="350" height="30"/>
+                                <state key="normal" title="Put bleach in Peppsy-Peps' gas tank after he leaves"/>
+                                <connections>
+                                    <segue destination="Ov5-zn-L5a" kind="show" id="lHQ-GF-7iQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="3id-E4-4qD">
+                                <rect key="frame" x="20" y="603" width="362" height="30"/>
+                                <state key="normal" title="Whatever you say, Peppsy-Peps"/>
+                                <connections>
+                                    <segue destination="cRE-nW-ebs" kind="show" id="Qwx-yv-iME"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Rn7-Oz-VZZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ggz-CA-zNI" firstAttribute="top" secondItem="3id-E4-4qD" secondAttribute="bottom" constant="139" id="2MY-e8-r49"/>
+                            <constraint firstItem="fCD-Re-3Cu" firstAttribute="leading" secondItem="Rn7-Oz-VZZ" secondAttribute="leading" constant="78" id="RAv-6Y-oOo"/>
+                            <constraint firstItem="Ggz-CA-zNI" firstAttribute="leading" secondItem="Rn7-Oz-VZZ" secondAttribute="leading" constant="32" id="XoH-u6-dhe"/>
+                            <constraint firstItem="3id-E4-4qD" firstAttribute="leading" secondItem="ahY-dN-gnv" secondAttribute="leadingMargin" id="dju-lH-Q5C"/>
+                            <constraint firstItem="3id-E4-4qD" firstAttribute="trailing" secondItem="Ggz-CA-zNI" secondAttribute="trailing" id="gOr-qa-e8W"/>
+                            <constraint firstItem="3id-E4-4qD" firstAttribute="top" secondItem="fCD-Re-3Cu" secondAttribute="bottom" constant="203" id="nCE-lU-lcc"/>
+                            <constraint firstItem="fCD-Re-3Cu" firstAttribute="centerX" secondItem="Ggz-CA-zNI" secondAttribute="centerX" id="oQl-Lq-lHX"/>
+                            <constraint firstItem="fCD-Re-3Cu" firstAttribute="top" secondItem="Rn7-Oz-VZZ" secondAttribute="top" constant="46" id="sia-tL-JCA"/>
+                            <constraint firstItem="Rn7-Oz-VZZ" firstAttribute="bottom" secondItem="Ggz-CA-zNI" secondAttribute="bottom" constant="60" id="x7w-w3-xIX"/>
+                            <constraint firstItem="Rn7-Oz-VZZ" firstAttribute="trailing" secondItem="Ggz-CA-zNI" secondAttribute="trailing" constant="32" id="yCY-4L-N5D"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3BR-fZ-Jx1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6fv-3I-ecb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1624.6376811594205" y="-947.54464285714278"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bL4-y4-hQh">
+            <objects>
+                <viewController id="wo0-4V-bIA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HGX-rz-iD6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ewi-dd-UpQ">
+                                <rect key="frame" x="32" y="554" width="362" height="30"/>
+                                <state key="normal" title="I'm glad we had this converstion."/>
+                                <connections>
+                                    <segue destination="uea-Qa-Een" kind="show" id="zBL-Ax-G4s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="QtX-eT-xLJ">
+                                <rect key="frame" x="32" y="624" width="350" height="30"/>
+                                <state key="normal" title="I'll call you Peppy if you let me drag race your Prius with the bois tonight."/>
+                                <connections>
+                                    <segue destination="iyx-cP-3Zj" kind="show" id="nqt-rh-btT"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Step-Pepper: Whatever, you don't deserve to be loved anway." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HBO-mh-yNM">
+                                <rect key="frame" x="78" y="272" width="258" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="x9V-K9-wfZ"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gRJ-54-Fji"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HBO-mh-yNM" firstAttribute="centerX" secondItem="QtX-eT-xLJ" secondAttribute="centerX" id="2aV-Fw-2Bk"/>
+                            <constraint firstItem="QtX-eT-xLJ" firstAttribute="leading" secondItem="gRJ-54-Fji" secondAttribute="leading" constant="32" id="B36-WD-1e1"/>
+                            <constraint firstItem="ewi-dd-UpQ" firstAttribute="trailing" secondItem="HGX-rz-iD6" secondAttribute="trailingMargin" id="CF4-sQ-dNi"/>
+                            <constraint firstItem="HBO-mh-yNM" firstAttribute="leading" secondItem="gRJ-54-Fji" secondAttribute="leading" constant="78" id="VAC-Lo-KmL"/>
+                            <constraint firstItem="HBO-mh-yNM" firstAttribute="top" secondItem="gRJ-54-Fji" secondAttribute="top" constant="184" id="a8f-8R-fAM"/>
+                            <constraint firstItem="gRJ-54-Fji" firstAttribute="bottom" secondItem="QtX-eT-xLJ" secondAttribute="bottom" constant="208" id="h9t-H7-XdW"/>
+                            <constraint firstItem="QtX-eT-xLJ" firstAttribute="top" secondItem="ewi-dd-UpQ" secondAttribute="bottom" constant="40" id="lO7-zR-J64"/>
+                            <constraint firstItem="HBO-mh-yNM" firstAttribute="centerX" secondItem="gRJ-54-Fji" secondAttribute="centerX" id="y2A-Du-Iyh"/>
+                            <constraint firstItem="ewi-dd-UpQ" firstAttribute="leading" secondItem="QtX-eT-xLJ" secondAttribute="leading" id="z0P-RP-Yns"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6ZK-ef-bmx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rm2-Ol-i5N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1625" y="-246"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NMG-35-X1O">
+            <objects>
+                <viewController id="rto-e5-saC" customClass="ViewController" customModule="MakeYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nhr-ri-gtQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="20 years have passed. You are now middle-managment at a Friendly's Franchise in Salem, VA " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RNZ-Dp-Elq">
+                                <rect key="frame" x="78" y="272" width="258" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="0gK-VY-0GB"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rL6-0i-Z4e"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RNZ-Dp-Elq" firstAttribute="leading" secondItem="rL6-0i-Z4e" secondAttribute="leading" constant="78" id="ImI-yk-1FS"/>
+                            <constraint firstItem="RNZ-Dp-Elq" firstAttribute="centerX" secondItem="rL6-0i-Z4e" secondAttribute="centerX" id="XsG-8U-jkr"/>
+                            <constraint firstItem="RNZ-Dp-Elq" firstAttribute="top" secondItem="rL6-0i-Z4e" secondAttribute="top" constant="184" id="kAK-ew-TY2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="IYV-Yf-YlM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YPM-oC-DBO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1768" y="771"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="x9Z-cs-tL3">
+            <objects>
+                <viewController id="M8d-C3-Nax" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G4f-hb-3Sg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ISb-4S-vtL">
+                                <rect key="frame" x="32" y="554" width="362" height="30"/>
+                                <state key="normal" title="Start playing &quot;Cats in the Cradle&quot; on oboe"/>
+                                <connections>
+                                    <segue destination="u0B-Wc-lZ1" kind="show" id="QNo-aA-in4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="aD1-mA-rX3">
+                                <rect key="frame" x="32" y="624" width="350" height="30"/>
+                                <state key="normal" title="Spear throw the oboe right into Step-Pepper's face"/>
+                                <connections>
+                                    <segue destination="pdZ-bl-rf9" kind="show" id="Vwx-gE-aUD"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="*Step-Pepper is holding a knife to your kickball in the garage* &quot;So what's it gonna be... Homework? or bye-bye bally?!&quot;" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9fr-ed-WaX">
+                                <rect key="frame" x="78" y="272" width="258" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="pFt-f8-ZLc"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9k6-yi-DHe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aD1-mA-rX3" firstAttribute="top" secondItem="ISb-4S-vtL" secondAttribute="bottom" constant="40" id="58O-NK-8kr"/>
+                            <constraint firstItem="aD1-mA-rX3" firstAttribute="leading" secondItem="9k6-yi-DHe" secondAttribute="leading" constant="32" id="65v-Wq-zY0"/>
+                            <constraint firstItem="ISb-4S-vtL" firstAttribute="trailing" secondItem="G4f-hb-3Sg" secondAttribute="trailingMargin" id="BKO-Xl-Ovh"/>
+                            <constraint firstItem="9fr-ed-WaX" firstAttribute="top" secondItem="9k6-yi-DHe" secondAttribute="top" constant="184" id="DSX-6Q-eAP"/>
+                            <constraint firstItem="9fr-ed-WaX" firstAttribute="centerX" secondItem="aD1-mA-rX3" secondAttribute="centerX" id="Miq-lS-cTv"/>
+                            <constraint firstItem="ISb-4S-vtL" firstAttribute="leading" secondItem="aD1-mA-rX3" secondAttribute="leading" id="RgA-eb-q9d"/>
+                            <constraint firstItem="9fr-ed-WaX" firstAttribute="centerX" secondItem="9k6-yi-DHe" secondAttribute="centerX" id="s8B-e4-6Ec"/>
+                            <constraint firstItem="9fr-ed-WaX" firstAttribute="leading" secondItem="9k6-yi-DHe" secondAttribute="leading" constant="78" id="ylw-le-hKl"/>
+                            <constraint firstItem="9k6-yi-DHe" firstAttribute="bottom" secondItem="aD1-mA-rX3" secondAttribute="bottom" constant="208" id="zrp-4u-cpm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="c89-gK-HNc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h8x-qe-r3Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1767" y="1463"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8w2-Bl-7yY">
+            <objects>
+                <viewController id="pdZ-bl-rf9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gKX-Du-jw4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Zey-hI-Jkg">
+                                <rect key="frame" x="32" y="554" width="362" height="30"/>
+                                <state key="normal" title="You say to Step-Pepper: &quot;You are powerless now. Get in your Prius. Leave. Never Come back.&quot;"/>
+                                <connections>
+                                    <segue destination="Ofn-vB-rfv" kind="show" id="Y6d-2U-g0i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="bKw-kv-2D5">
+                                <rect key="frame" x="32" y="624" width="350" height="30"/>
+                                <state key="normal" title="Pee your pants to neutralize power struggle"/>
+                                <connections>
+                                    <segue destination="nAO-E5-ND6" kind="show" id="jqj-xz-zA4"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9Ac-fG-PGx">
+                                <rect key="frame" x="78" y="272" width="258" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="exD-Vd-Vrh"/>
+                                </constraints>
+                                <string key="text">You aim too low and your oboe punctures the kickball reed-side first. The ball pops. Step-Pepper looses all leverage. His face is stoic.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aut-I7-w3L"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bKw-kv-2D5" firstAttribute="top" secondItem="Zey-hI-Jkg" secondAttribute="bottom" constant="40" id="2ur-Ay-cwq"/>
+                            <constraint firstItem="9Ac-fG-PGx" firstAttribute="centerX" secondItem="bKw-kv-2D5" secondAttribute="centerX" id="Crj-VX-jyV"/>
+                            <constraint firstItem="Zey-hI-Jkg" firstAttribute="leading" secondItem="bKw-kv-2D5" secondAttribute="leading" id="EsR-n3-Bt0"/>
+                            <constraint firstItem="9Ac-fG-PGx" firstAttribute="top" secondItem="aut-I7-w3L" secondAttribute="top" constant="184" id="Gk9-ZO-gyq"/>
+                            <constraint firstItem="9Ac-fG-PGx" firstAttribute="centerX" secondItem="aut-I7-w3L" secondAttribute="centerX" id="JFu-Zk-fvm"/>
+                            <constraint firstItem="aut-I7-w3L" firstAttribute="bottom" secondItem="bKw-kv-2D5" secondAttribute="bottom" constant="208" id="jpS-bJ-Fip"/>
+                            <constraint firstItem="9Ac-fG-PGx" firstAttribute="leading" secondItem="aut-I7-w3L" secondAttribute="leading" constant="78" id="nUr-QC-cqP"/>
+                            <constraint firstItem="Zey-hI-Jkg" firstAttribute="trailing" secondItem="gKX-Du-jw4" secondAttribute="trailingMargin" id="r4b-fZ-6Xw"/>
+                            <constraint firstItem="bKw-kv-2D5" firstAttribute="leading" secondItem="aut-I7-w3L" secondAttribute="leading" constant="32" id="t2U-xk-C6A"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dYl-FZ-uCT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bhd-07-oDF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2571" y="2129"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="D72-RD-URq">
+            <objects>
+                <viewController id="u0B-Wc-lZ1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KQc-nm-3RE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="sbB-XQ-PNq">
+                                <rect key="frame" x="32" y="554" width="362" height="30"/>
+                                <state key="normal" title="Kick the ball in his face mid-recital"/>
+                                <connections>
+                                    <segue destination="tyx-0y-JkH" kind="show" id="gj3-Hn-UZd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Ok7-ln-Lho">
+                                <rect key="frame" x="32" y="624" width="350" height="30"/>
+                                <state key="normal" title="Embrace this powerful bonding moment with your new Step-Pepper"/>
+                                <connections>
+                                    <segue destination="gac-XD-wtz" kind="show" id="Kwh-1e-xy9"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VBy-Yd-nfg">
+                                <rect key="frame" x="78" y="272" width="258" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="9f9-Fg-QZQ"/>
+                                </constraints>
+                                <string key="text">*Step-Pepper is awe-struck by the song choice. He drops the ball and quivers in ecstasy as you inch towards the ball mid-recital*</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PO6-Rd-ybg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ok7-ln-Lho" firstAttribute="top" secondItem="sbB-XQ-PNq" secondAttribute="bottom" constant="40" id="ABP-PI-D6o"/>
+                            <constraint firstItem="VBy-Yd-nfg" firstAttribute="leading" secondItem="PO6-Rd-ybg" secondAttribute="leading" constant="78" id="BSE-T5-ZNk"/>
+                            <constraint firstItem="VBy-Yd-nfg" firstAttribute="top" secondItem="PO6-Rd-ybg" secondAttribute="top" constant="184" id="OvX-5j-3CM"/>
+                            <constraint firstItem="sbB-XQ-PNq" firstAttribute="leading" secondItem="Ok7-ln-Lho" secondAttribute="leading" id="dvE-SI-1EJ"/>
+                            <constraint firstItem="sbB-XQ-PNq" firstAttribute="trailing" secondItem="KQc-nm-3RE" secondAttribute="trailingMargin" id="gy9-6V-H6r"/>
+                            <constraint firstItem="VBy-Yd-nfg" firstAttribute="centerX" secondItem="PO6-Rd-ybg" secondAttribute="centerX" id="hzf-AI-PXA"/>
+                            <constraint firstItem="VBy-Yd-nfg" firstAttribute="centerX" secondItem="Ok7-ln-Lho" secondAttribute="centerX" id="ig9-MC-ttx"/>
+                            <constraint firstItem="Ok7-ln-Lho" firstAttribute="leading" secondItem="PO6-Rd-ybg" secondAttribute="leading" constant="32" id="rXN-ik-m6N"/>
+                            <constraint firstItem="PO6-Rd-ybg" firstAttribute="bottom" secondItem="Ok7-ln-Lho" secondAttribute="bottom" constant="208" id="wYN-y5-mlw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="PpF-au-p4g"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AG3-ie-q4P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2938" y="1106"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8PD-be-Aas">
+            <objects>
+                <viewController id="tyx-0y-JkH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lnj-7U-vrh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="1Qn-8S-Vgh">
+                                <rect key="frame" x="32" y="554" width="362" height="30"/>
+                                <state key="normal" title="Tell Mom the nice man at the Prius dealership was responsible for your Step-Peppers paranormal demise. "/>
+                                <connections>
+                                    <segue destination="tqo-Gb-yn7" kind="show" id="f09-Ir-Ngd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="TU1-EG-4my">
+                                <rect key="frame" x="32" y="624" width="350" height="30"/>
+                                <state key="normal" title="Hide under the Prius and hope no one finds out that you are a murderer"/>
+                                <connections>
+                                    <segue destination="eiN-1H-k5G" kind="show" id="64p-tH-IDu"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mVi-7n-bjB">
+                                <rect key="frame" x="78" y="272" width="258" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="AYJ-uT-VHY"/>
+                                </constraints>
+                                <string key="text">*Unsure of your potential and strength, you kick the ball with all of your might. The gods cower behind the clouds as the ball breaks the sound barrier and decapitates your Step-Pepper*</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ky5-Q1-v5o"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TU1-EG-4my" firstAttribute="top" secondItem="1Qn-8S-Vgh" secondAttribute="bottom" constant="40" id="2Ua-un-tLn"/>
+                            <constraint firstItem="1Qn-8S-Vgh" firstAttribute="trailing" secondItem="Lnj-7U-vrh" secondAttribute="trailingMargin" id="3MB-AZ-FAb"/>
+                            <constraint firstItem="1Qn-8S-Vgh" firstAttribute="leading" secondItem="TU1-EG-4my" secondAttribute="leading" id="5Qs-0I-QRs"/>
+                            <constraint firstItem="mVi-7n-bjB" firstAttribute="centerX" secondItem="TU1-EG-4my" secondAttribute="centerX" id="Dfo-Tz-UIj"/>
+                            <constraint firstItem="mVi-7n-bjB" firstAttribute="centerX" secondItem="Ky5-Q1-v5o" secondAttribute="centerX" id="HAh-dv-Cpg"/>
+                            <constraint firstItem="mVi-7n-bjB" firstAttribute="leading" secondItem="Ky5-Q1-v5o" secondAttribute="leading" constant="78" id="aos-L9-woP"/>
+                            <constraint firstItem="TU1-EG-4my" firstAttribute="leading" secondItem="Ky5-Q1-v5o" secondAttribute="leading" constant="32" id="h4B-Yn-euC"/>
+                            <constraint firstItem="Ky5-Q1-v5o" firstAttribute="bottom" secondItem="TU1-EG-4my" secondAttribute="bottom" constant="208" id="plL-jy-0pd"/>
+                            <constraint firstItem="mVi-7n-bjB" firstAttribute="top" secondItem="Ky5-Q1-v5o" secondAttribute="top" constant="184" id="q3Y-lC-3zL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xc0-CK-Hjf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7HP-Y0-IHg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3897" y="736"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BzK-dk-U79">
+            <objects>
+                <viewController id="gac-XD-wtz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hge-ge-DO7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="mwA-E3-9hH">
+                                <rect key="frame" x="32" y="554" width="362" height="30"/>
+                                <state key="normal">
+                                    <string key="title">Say you're going to run in and get your coat, but do your homework instead. You know Mom will yell at Step-Pepper about distracting you from your studies.</string>
+                                </state>
+                                <connections>
+                                    <segue destination="rto-e5-saC" kind="show" id="9mn-Eu-G6k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="YHx-v6-Mde">
+                                <rect key="frame" x="32" y="624" width="350" height="30"/>
+                                <state key="normal" title="Get in the Prius and delete your real Dad's number from your contacts."/>
+                                <connections>
+                                    <segue destination="3Na-lG-zBv" kind="show" id="LJQ-ut-xAf"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Step-Pepper: &quot;Let's say you and me get some ice cream! Come on, we can take my new Prius.&quot;" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VkL-Md-QbP">
+                                <rect key="frame" x="78" y="272" width="258" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="JDQ-zs-rBd"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xJf-BJ-2mo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mwA-E3-9hH" firstAttribute="trailing" secondItem="Hge-ge-DO7" secondAttribute="trailingMargin" id="9Gh-BC-wkQ"/>
+                            <constraint firstItem="YHx-v6-Mde" firstAttribute="top" secondItem="mwA-E3-9hH" secondAttribute="bottom" constant="40" id="9e6-bw-02N"/>
+                            <constraint firstItem="mwA-E3-9hH" firstAttribute="leading" secondItem="YHx-v6-Mde" secondAttribute="leading" id="FBe-TR-LIl"/>
+                            <constraint firstItem="VkL-Md-QbP" firstAttribute="top" secondItem="xJf-BJ-2mo" secondAttribute="top" constant="184" id="Fvs-1w-CBY"/>
+                            <constraint firstItem="VkL-Md-QbP" firstAttribute="centerX" secondItem="xJf-BJ-2mo" secondAttribute="centerX" id="Xyi-ly-w9o"/>
+                            <constraint firstItem="VkL-Md-QbP" firstAttribute="centerX" secondItem="YHx-v6-Mde" secondAttribute="centerX" id="m0N-7T-cLn"/>
+                            <constraint firstItem="xJf-BJ-2mo" firstAttribute="bottom" secondItem="YHx-v6-Mde" secondAttribute="bottom" constant="208" id="pw1-vc-hcW"/>
+                            <constraint firstItem="YHx-v6-Mde" firstAttribute="leading" secondItem="xJf-BJ-2mo" secondAttribute="leading" constant="32" id="tXK-1t-3rW"/>
+                            <constraint firstItem="VkL-Md-QbP" firstAttribute="leading" secondItem="xJf-BJ-2mo" secondAttribute="leading" constant="78" id="zXj-Fg-cAd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MOJ-Ss-lNf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BUF-ly-Gzj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3896" y="1401"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uXI-vz-cCX">
+            <objects>
+                <viewController id="3Na-lG-zBv" customClass="ViewController" customModule="MakeYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Nj-EU-Tdb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7in-f7-TDo">
+                                <rect key="frame" x="75" y="126" width="265" height="537.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">20 years have passed. You make money by scraping dead worms off the sidewalk. While you're working, your real Dad speeds by in a flying PT-Cruiser with a bunch of cash flying out of the windows and several hot models in the back seat. He stops the car, lowers his sunglasses and asks you "Could you point me in the right direction to the Yacht store? Wait... aren't you my old son? pffft... Here's one bitcoin. Go buy yourself a real job. l8r loser." Your Step-Pepper texts you 20 minutes later: "You'll never believe who I just ran into while scraping dead worms off of Yachts! Also, I don't love you anymore.
+</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4Ep-lT-i54"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7in-f7-TDo" firstAttribute="leading" secondItem="4Ep-lT-i54" secondAttribute="leading" constant="75" id="5nP-DQ-CUN"/>
+                            <constraint firstItem="4Ep-lT-i54" firstAttribute="bottom" secondItem="7in-f7-TDo" secondAttribute="bottom" constant="198.5" id="Yi3-Dk-4P5"/>
+                            <constraint firstItem="4Ep-lT-i54" firstAttribute="trailing" secondItem="7in-f7-TDo" secondAttribute="trailing" constant="74" id="aoO-UT-7D6"/>
+                            <constraint firstItem="7in-f7-TDo" firstAttribute="top" secondItem="4Ep-lT-i54" secondAttribute="top" constant="38" id="zJF-pf-4f8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="sMb-88-p5f"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QrL-QQ-mpf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4871.0144927536239" y="1448.4375"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GRJ-20-8Vg">
+            <objects>
+                <viewController id="Ofn-vB-rfv" customClass="ViewController" customModule="MakeYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cfY-90-Qxt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="b5G-EU-QD0">
+                                <rect key="frame" x="20" y="66" width="374" height="765"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">With his tail between his legs, your Step-Pepper gets in his Prius and never comes back. Your mom spends the next 15 years blaming herself until one day, she runs into your ex-Step-Pepper in a method acting class. Oblivious to their troubled past, the method acting practitioner pairs them up and tells them "I want you both to play a husband and wife torn between having a baby and traveling the world." Their performance reduces the entire class to tears during a 3 hour standing ovation. George Clooney gets wind of this and demands to see the security tape footage of the whole thing. George Clooney watches the footage, buckles his knees, falls to the ground while pounding his fists in a drunken bewilderment. While wiping the slobber off of his tear-soaked face. He screams "I'll give them an offer they can't refuse!" Clooney finds Mom and ex-Step-Pepper and offers them life changing staring roles in his next film "Oceans 16: 16 Cis-Teen's Sweet 16s" where George Clooney mentors 16 cisgender teenagers that all have the same birthday to steal the Mona Lisa, because they all have the perfect alibi and also can't be tried as adults if they get caught. Mom and ex-Step-Pepper remarry while also filing for you to be emancipated from their parental responsibilities, even though you're 31 years old. You are alone every birthday, Thanksgiving, and Christmas for the rest of your life.
+</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aeA-Wm-xBk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aeA-Wm-xBk" firstAttribute="bottom" secondItem="b5G-EU-QD0" secondAttribute="bottom" constant="31" id="KqV-m7-o5e"/>
+                            <constraint firstItem="b5G-EU-QD0" firstAttribute="top" secondItem="cfY-90-Qxt" secondAttribute="top" constant="66" id="Ski-vw-Yyh"/>
+                            <constraint firstItem="b5G-EU-QD0" firstAttribute="leading" secondItem="aeA-Wm-xBk" secondAttribute="leading" constant="20" id="Y8C-N6-jnB"/>
+                            <constraint firstItem="aeA-Wm-xBk" firstAttribute="trailing" secondItem="b5G-EU-QD0" secondAttribute="trailing" constant="20" id="fAI-Nb-ufR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="sQM-HJ-bgI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qpA-fy-R97" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3478" y="2058"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aY1-Kt-zc1">
+            <objects>
+                <viewController id="nAO-E5-ND6" customClass="ViewController" customModule="MakeYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8fO-xi-bJm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="20  years have passed and everyone, including your Mom, calls you &quot;Piss Pants&quot;" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fc7-do-PKf">
+                                <rect key="frame" x="31" y="204" width="352" height="351"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gBz-9o-y2z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fc7-do-PKf" firstAttribute="leading" secondItem="gBz-9o-y2z" secondAttribute="leading" constant="31" id="4oL-HL-TiR"/>
+                            <constraint firstItem="gBz-9o-y2z" firstAttribute="bottom" secondItem="fc7-do-PKf" secondAttribute="bottom" constant="307" id="L7p-ei-eBr"/>
+                            <constraint firstItem="gBz-9o-y2z" firstAttribute="trailing" secondItem="fc7-do-PKf" secondAttribute="trailing" constant="31" id="dCH-zj-VzO"/>
+                            <constraint firstItem="fc7-do-PKf" firstAttribute="top" secondItem="gBz-9o-y2z" secondAttribute="top" constant="116" id="rIO-BD-2dU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hfl-Z4-eOa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="70c-oq-tGc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3476.811594202899" y="2724.7767857142858"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XLP-ER-Qtr">
+            <objects>
+                <viewController id="tqo-Gb-yn7" customClass="ViewController" customModule="MakeYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZJH-HI-Uoh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lB7-N1-Hu2">
+                                <rect key="frame" x="20" y="126" width="374" height="702"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">It turns out, the "nice man" at the Prius dealership is, in fact, a deranged sociopath. (talk about a coincidence!) After your Mom reports this false information you gave her to the police, the Prius salesman plays along to your surprise and does not defend himself against the false charges during his murder trial. At one point in the trial, the Prius salesman looks to the jury and says "The only other possible way this Step-Pepper was murdered is if the kid did it." It gets a distastefully long laugh out of the jury before the judge slams her gavel a few dozen times. While you nervously blush, the bailiff smirks, rolls his eyes, locks your head in his elbow and gives you a dandruff-shedding noogie while saying "The only thing this kid is guilty of is being cute as a button!" More distasteful ear piercing laughter rages from the smiling mouths of the Jury. The Judge, failing miserably in holding in her own laughter, slams her gavel a few dozen more times and exclaims “Alright, alright, alright, ALRIGHT everybody. Let’s give this kid a break and a round of applause for being so brave during this TRYING TRIAL.” The judge realized her play on words and thought the hearing could move on if she didn’t acknowledge it. Boy, was she wrong. Another fit of roaring laughter from the Jury pollutes the courtroom, which eventually settles down after a few dozen more pounds from the gavel. The Prius salesman is sentenced to 20 years in prison for a crime that you committed. 12 years pass and your guilty conscience eats away what's left of your moral compass every single day. The Prius salesman is released on good behavior. With over a decade of planning under his belt, he starts to stalk you. He eventually is able to obtain your phone and changes the phone number you have saved for "Mom" to his phone number. One day, you get a text from Mom, "Help me, I've fallen and I can't get up." You rush to your Mom and find the Prius salesman dressed in her robe and slippers. "Don't worry" he says, "I'm your new Mimsy-Mim now". Afraid of your life, you reply "Sure thing "Mimsy". You treat this man like your mother for the rest of your life out of fear.
+</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YHp-In-42f"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lB7-N1-Hu2" firstAttribute="leading" secondItem="YHp-In-42f" secondAttribute="leading" constant="20" id="c6j-gE-6Pr"/>
+                            <constraint firstItem="YHp-In-42f" firstAttribute="trailing" secondItem="lB7-N1-Hu2" secondAttribute="trailing" constant="20" id="c8F-Qe-prJ"/>
+                            <constraint firstItem="lB7-N1-Hu2" firstAttribute="top" secondItem="YHp-In-42f" secondAttribute="top" constant="38" id="xTO-lG-54b"/>
+                            <constraint firstItem="YHp-In-42f" firstAttribute="bottom" secondItem="lB7-N1-Hu2" secondAttribute="bottom" constant="34" id="xit-mA-ePI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uIO-Sd-HWD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mUi-if-KNx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5261" y="342"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="v3H-fl-Jn1">
+            <objects>
+                <viewController id="eiN-1H-k5G" customClass="ViewController" customModule="MakeYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bnK-vy-U9e">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="l9W-eO-irz">
+                                <rect key="frame" x="40" y="82" width="333" height="807.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Your Mom, realizing she's late for her spin class, runs as quickly as she can out of the garage door. She doesn't even spare the nano-second to look at your headless Step-Pepper on the ground. "I'll be back in an hour, fish sticks are in the freezer if you all get hungry!" As she excitingly enters the brand new family Prius, she whispers under her breath "Let's make this kitty PURR!" While you are rolling on the ground in an attempt to get out from under the car, you Mom floors the gas and runs over your entire body longways. This causes the car to reverse-barrel roll out of the driveway, but the car ends up landing on all 4 tires. Unphased, your mom is on a mission to get to spin class in time so she can snag a front row bike. Meanwhile, you are in God’s waiting room. Right before you die, you are paralized from the neck down. Your neighbor's kid witnesses everything and calls the police. The kid explains to the cops that your mom ran you over on purpose. The cops assume your Step-Pepper's missing head is caught up in the undercarriage of the Prius. You die before you can tell the cops anything. When your mom gets to her spin class, she too late to get a front row seat. "...I wish the good Lord would just take me now." she thinks to herself while taking a back row bike. The cops bust down the door and scream "Police!" and tackle your Mom off of her bike. While getting handcuffed on the ground, she sighs a relieved sigh and smiles as she is taken by the cops. "It's nice when the Lord answers prayers" she says to the cops as they take her away to Prison where she eventally gets the death penalty.
+</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3sC-90-PQ0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="l9W-eO-irz" firstAttribute="top" secondItem="bnK-vy-U9e" secondAttribute="top" constant="82" id="LdD-rU-I6y"/>
+                            <constraint firstItem="3sC-90-PQ0" firstAttribute="trailing" secondItem="l9W-eO-irz" secondAttribute="trailing" constant="41" id="Mcj-KM-hu5"/>
+                            <constraint firstAttribute="bottom" secondItem="l9W-eO-irz" secondAttribute="bottom" constant="6.5" id="OUj-FY-L5X"/>
+                            <constraint firstItem="l9W-eO-irz" firstAttribute="leading" secondItem="3sC-90-PQ0" secondAttribute="leading" constant="40" id="RVO-l9-ruX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WQ2-fx-Nv5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gpI-ZA-cM3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4552" y="771"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Yw9-gS-cp1">
+            <objects>
+                <viewController id="cRE-nW-ebs" customClass="ViewController" customModule="MakeYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Gt-FI-bdW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lDm-5z-Ytv">
+                                <rect key="frame" x="20" y="126" width="374" height="702"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Your Step-Pepper smiles, winks, and with a Hardy chuckle, he says "I'll tell you what, kid. If you can convince your Mom to ditch spin class and come hunting with me, Buck, and the boys, I'll let you just call me Jeff and never give you a hard time again." "...Jeff?" you mumble in a long stupor, "...That's my real Dad's name. How am I only learning that now about you?" Your Step-Pepper repeatedly hits his face with his palm and screams "AHHHH, HELL!... You were never suppose to know this but... your Mom is in a cult where everyone in it forces their male loved ones to legally change their name to 'Jeff' so they know who to take out." You skeptically respond "...Take out? What's the suppose to mean?" Before your Step-Pepper can answer your question, your mom busts through the door with a Molotov cocktail in hand and says "Step aside, Jeff. You've said too much." She throws the Molotov cocktail at your face. You die.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Avd-KG-D7Y"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lDm-5z-Ytv" firstAttribute="leading" secondItem="Avd-KG-D7Y" secondAttribute="leading" constant="20" id="AZt-1s-bgz"/>
+                            <constraint firstItem="Avd-KG-D7Y" firstAttribute="bottom" secondItem="lDm-5z-Ytv" secondAttribute="bottom" constant="34" id="HmB-pd-zYd"/>
+                            <constraint firstItem="lDm-5z-Ytv" firstAttribute="top" secondItem="Avd-KG-D7Y" secondAttribute="top" constant="38" id="ao6-IM-btR"/>
+                            <constraint firstItem="Avd-KG-D7Y" firstAttribute="trailing" secondItem="lDm-5z-Ytv" secondAttribute="trailing" constant="20" id="t3h-UH-Gnn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zhm-Gl-V6o"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XoA-f0-svK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2536" y="-1045"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gME-Ik-oDa">
+            <objects>
+                <viewController id="Ov5-zn-L5a" customClass="ViewController" customModule="MakeYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DZI-Fb-eAC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pbz-9n-Tzp">
+                                <rect key="frame" x="20" y="126" width="374" height="702"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Your Step-Pepper, proud after putting you in your place, gives himself a pat on the back and cracks open a couple of cold ones. He becomes too drunk to drive the Prius to meet up with the boys and passes out on the couch. Your Mom, relizing she's late for her spin class, runs as quickly as she can towards the garage door. She see's that the keys to the new Prius are also by the door next to her school bus keys. "Oh my heavens!" your mom exclaims, "It's been ages since I've driven something so efficient and kind to the earth!", With a grimacing face, she goes for the Prius keys, turns to you and and says "I'll be back in an hour, fish sticks are in the freezer if you all get hungry! Be sure to sing to your Step-Pepper while he is sleeping so he has good dreams." As she excitingly enters the brand new family Prius, you follow her to the garage and say "NO MOM, WAIT!" As she turns the keys, the car explodes and your house burns down. Your Mom dies. Your Step-Pepper dies, and you live, but your eyebrows get permanently singed off of your face. Your real dad acts like he doesn't know you when you both go to parties together "No no, that's not my son. You can tell because I have two beautiful thick eyebrows and he has none." He is so convincing with that argument, he was even able to convince your school's guidance councelor that you are an orphan. Everyone at school teases you and chants "HIGH BROW. LOW BROW. NO-BROWED ORPHAN". It's a really catchy sing-songy chant that people keep screaming at your browless face for the rest of your life.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IqN-WB-9J8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pbz-9n-Tzp" firstAttribute="top" secondItem="IqN-WB-9J8" secondAttribute="top" constant="38" id="Iel-oV-9FN"/>
+                            <constraint firstItem="IqN-WB-9J8" firstAttribute="bottom" secondItem="pbz-9n-Tzp" secondAttribute="bottom" constant="34" id="Muh-od-6qK"/>
+                            <constraint firstItem="IqN-WB-9J8" firstAttribute="trailing" secondItem="pbz-9n-Tzp" secondAttribute="trailing" constant="20" id="SAi-io-Swn"/>
+                            <constraint firstItem="pbz-9n-Tzp" firstAttribute="leading" secondItem="IqN-WB-9J8" secondAttribute="leading" constant="20" id="rPX-zL-hSm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vEx-dq-5SG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mcj-fM-Sjp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3194" y="-758"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oES-41-n0o">
+            <objects>
+                <viewController id="uea-Qa-Een" customClass="ViewController" customModule="MakeYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d7C-lO-P1P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Y0B-bm-40a">
+                                <rect key="frame" x="20" y="126" width="374" height="702"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Your Mom passes by and hears the exchange between you and your Step-Pepper. She looks at you and cocks her head to the side and says "I wish you were taller." She stands on her tippy-toes and gives you three hard pats on the head. You look down at her (because you happen to be taller than her) and ask "Mom, you still love me though, right?" She taps her index finger at her chin a few times and gives a long hardy "Hmmmmm..." A single tear falls down your face and you run away from home. You get a job at the circus because it's the only place you find that doesn't care that you don't even have a GED. Your mom goes to the circus one day with someone that looks just like you. You approach her and say "Mom?! Why are you hear?! Who is that?" She turns to you, then to your doppelganger and says "Ummm... have you ever seen the movie 'Parent Trap'?" You reply "Yes..." Your Mom, unable to maintain eye contact with you says "You've been Parent Trapped. You have a twin I never told you about. Your twin coincidentally ran away from your real Dad right when you ran away from me. I prefer your twin much more than you. So does your real Dad. We've been in a raging custody battle about it since you've been gone. Neither of us want you back in our lives anymore." As a single tear falls form your face, your twin gently wipes it from your cheek and says "It's alright, Sport!" then gives you a $5 tip for the commendable circus act even though you suck at your circus job. </string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eoR-j7-ltA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eoR-j7-ltA" firstAttribute="bottom" secondItem="Y0B-bm-40a" secondAttribute="bottom" constant="34" id="EIN-LQ-xIN"/>
+                            <constraint firstItem="eoR-j7-ltA" firstAttribute="trailing" secondItem="Y0B-bm-40a" secondAttribute="trailing" constant="20" id="NHg-Kp-Fme"/>
+                            <constraint firstItem="Y0B-bm-40a" firstAttribute="leading" secondItem="eoR-j7-ltA" secondAttribute="leading" constant="20" id="VAN-uS-MXa"/>
+                            <constraint firstItem="Y0B-bm-40a" firstAttribute="top" secondItem="eoR-j7-ltA" secondAttribute="top" constant="38" id="xxY-2I-Dxz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zki-Ig-LK7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HBz-xX-HCE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2758" y="-86"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cy7-2c-x2O">
+            <objects>
+                <viewController id="iyx-cP-3Zj" customClass="ViewController" customModule="MakeYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kUV-Vi-yx9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kOp-qq-yLE">
+                                <rect key="frame" x="20" y="126" width="374" height="702"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Your Step-Pepper, trying to contain his excitement, looks around the room to make sure your Mom isn't around and says "You've got yourself a deal kid." He throws the keys at you and you catch them. You grin and start the Prius up. He motions at you to roll down the window down so he can say something, "Just be home before 8 or else your mom will get suspicious." It's your first time driving a car. You are surprised at how natrually driving is coming to you and you haven't caused any accidents. You make a wrong turn when you try to head to the drag racing spot. You make another wrong turn. You are lost. You run out of gas while you are miles from anything that looks familiar." You try to walk to a gas station, and the clerk gives you a free container of gas. The clerk hands you the gas container and says "Fill er' up and drive back here and I'll point you in the right direction." Relieved, you start walking back to the car. You take a wrong turn while trying to walk back to the car. You never find the car again while walking. It's been days, and you are so lost. You trip over yourself and gasoline spills all over you. A passing car tosses a lit cigaratte out of the window and it hits you. It lights you on fire and you burn to death. </string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="g3a-MO-3Y9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kOp-qq-yLE" firstAttribute="top" secondItem="g3a-MO-3Y9" secondAttribute="top" constant="38" id="FfO-7U-2xo"/>
+                            <constraint firstItem="kOp-qq-yLE" firstAttribute="leading" secondItem="g3a-MO-3Y9" secondAttribute="leading" constant="20" id="Q9Y-fV-2Ff"/>
+                            <constraint firstItem="g3a-MO-3Y9" firstAttribute="trailing" secondItem="kOp-qq-yLE" secondAttribute="trailing" constant="20" id="enn-uv-LI3"/>
+                            <constraint firstItem="g3a-MO-3Y9" firstAttribute="bottom" secondItem="kOp-qq-yLE" secondAttribute="bottom" constant="34" id="wa8-ch-vLR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="acb-5H-LA0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YEF-fv-FT2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2630" y="618"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="9mn-Eu-G6k"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
